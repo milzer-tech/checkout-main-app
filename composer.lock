@@ -3179,16 +3179,16 @@
         },
         {
             "name": "milzer/checkout",
-            "version": "v1.0.7",
+            "version": "v1.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/milzer-tech/checkout.git",
-                "reference": "437a580a3e32532a4ec1c833ed06e22f03f28ffd"
+                "reference": "a552e5b0c6c1d051b7aafd3869a1ffc6b6dc8cf3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/milzer-tech/checkout/zipball/437a580a3e32532a4ec1c833ed06e22f03f28ffd",
-                "reference": "437a580a3e32532a4ec1c833ed06e22f03f28ffd",
+                "url": "https://api.github.com/repos/milzer-tech/checkout/zipball/a552e5b0c6c1d051b7aafd3869a1ffc6b6dc8cf3",
+                "reference": "a552e5b0c6c1d051b7aafd3869a1ffc6b6dc8cf3",
                 "shasum": ""
             },
             "require": {
@@ -3243,9 +3243,9 @@
             ],
             "support": {
                 "issues": "https://github.com/milzer-tech/checkout/issues",
-                "source": "https://github.com/milzer-tech/checkout/tree/v1.0.7"
+                "source": "https://github.com/milzer-tech/checkout/tree/v1.0.8"
             },
-            "time": "2025-08-29T13:03:23+00:00"
+            "time": "2025-08-29T13:08:36+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -7325,16 +7325,16 @@
         },
         {
             "name": "symfony/translation",
-            "version": "v7.3.2",
+            "version": "v7.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/translation.git",
-                "reference": "81b48f4daa96272efcce9c7a6c4b58e629df3c90"
+                "reference": "e0837b4cbcef63c754d89a4806575cada743a38d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/translation/zipball/81b48f4daa96272efcce9c7a6c4b58e629df3c90",
-                "reference": "81b48f4daa96272efcce9c7a6c4b58e629df3c90",
+                "url": "https://api.github.com/repos/symfony/translation/zipball/e0837b4cbcef63c754d89a4806575cada743a38d",
+                "reference": "e0837b4cbcef63c754d89a4806575cada743a38d",
                 "shasum": ""
             },
             "require": {
@@ -7401,7 +7401,7 @@
             "description": "Provides tools to internationalize your application",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/translation/tree/v7.3.2"
+                "source": "https://github.com/symfony/translation/tree/v7.3.3"
             },
             "funding": [
                 {
@@ -7421,7 +7421,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-07-30T17:31:46+00:00"
+            "time": "2025-08-01T21:02:37+00:00"
         },
         {
             "name": "symfony/translation-contracts",
