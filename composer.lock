@@ -1159,16 +1159,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v12.35.0",
+            "version": "v12.35.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "9583ef9e405a71d5b8c04ff6efd05a7ef9a5baef"
+                "reference": "d6d6e3cb68238e2fb25b440f222442adef5a8a15"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/9583ef9e405a71d5b8c04ff6efd05a7ef9a5baef",
-                "reference": "9583ef9e405a71d5b8c04ff6efd05a7ef9a5baef",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/d6d6e3cb68238e2fb25b440f222442adef5a8a15",
+                "reference": "d6d6e3cb68238e2fb25b440f222442adef5a8a15",
                 "shasum": ""
             },
             "require": {
@@ -1374,7 +1374,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2025-10-21T15:15:41+00:00"
+            "time": "2025-10-23T15:25:03+00:00"
         },
         {
             "name": "laravel/horizon",
@@ -2271,16 +2271,16 @@
         },
         {
             "name": "milzer/checkout",
-            "version": "v1.0.11",
+            "version": "v1.0.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/milzer-tech/checkout.git",
-                "reference": "e0e3daec9f8578095ad31960d3d18ca88ceec4df"
+                "reference": "60d53767651ccea6896aa5aa5f8838930071d655"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/milzer-tech/checkout/zipball/e0e3daec9f8578095ad31960d3d18ca88ceec4df",
-                "reference": "e0e3daec9f8578095ad31960d3d18ca88ceec4df",
+                "url": "https://api.github.com/repos/milzer-tech/checkout/zipball/60d53767651ccea6896aa5aa5f8838930071d655",
+                "reference": "60d53767651ccea6896aa5aa5f8838930071d655",
                 "shasum": ""
             },
             "require": {
@@ -2335,9 +2335,9 @@
             ],
             "support": {
                 "issues": "https://github.com/milzer-tech/checkout/issues",
-                "source": "https://github.com/milzer-tech/checkout/tree/v1.0.11"
+                "source": "https://github.com/milzer-tech/checkout/tree/v1.0.12"
             },
-            "time": "2025-10-22T14:50:21+00:00"
+            "time": "2025-10-24T10:51:27+00:00"
         },
         {
             "name": "monolog/monolog",
