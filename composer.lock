@@ -2277,16 +2277,16 @@
         },
         {
             "name": "milzer/checkout",
-            "version": "v1.0.21",
+            "version": "v1.0.22",
             "source": {
                 "type": "git",
                 "url": "https://github.com/milzer-tech/checkout.git",
-                "reference": "3123dc9b62e87ada637c367701d2fffe6146f098"
+                "reference": "acfa071d2b3db9bcbf711fa6c4fcbdc59d6bc54a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/milzer-tech/checkout/zipball/3123dc9b62e87ada637c367701d2fffe6146f098",
-                "reference": "3123dc9b62e87ada637c367701d2fffe6146f098",
+                "url": "https://api.github.com/repos/milzer-tech/checkout/zipball/acfa071d2b3db9bcbf711fa6c4fcbdc59d6bc54a",
+                "reference": "acfa071d2b3db9bcbf711fa6c4fcbdc59d6bc54a",
                 "shasum": ""
             },
             "require": {
@@ -2345,9 +2345,9 @@
             ],
             "support": {
                 "issues": "https://github.com/milzer-tech/checkout/issues",
-                "source": "https://github.com/milzer-tech/checkout/tree/v1.0.21"
+                "source": "https://github.com/milzer-tech/checkout/tree/v1.0.22"
             },
-            "time": "2025-12-01T08:12:54+00:00"
+            "time": "2025-12-01T11:17:49+00:00"
         },
         {
             "name": "monolog/monolog",
