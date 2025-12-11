@@ -52,9 +52,16 @@
             background: #439a48;
         }
 
-        p {
+        p, li {
             font-size: 15px;
             line-height: 1.5;
+            text-align: left;
+        }
+
+        ol {
+            margin-top: 15px;
+            padding-left: 20px;
+            text-align: left;
         }
     </style>
 </head>
@@ -65,13 +72,23 @@
 
     <p>Please configure the following <strong>Custom Checkout URL</strong> in your Nezasa instance:</p>
 
-    <p>Your current detected domain:</p>
-
     <div class="code-box">
         <pre id="checkoutUrl">{{ url('/') }}/checkout/details?checkoutId=${CHECKOUT_ID}&itineraryId=${ITINERARY_ID}&origin=${ORIGIN}&lang=${ITINERARY_LANG}</pre>
     </div>
 
     <button class="copy-btn" onclick="copyCheckoutUrl()">Copy URL</button>
+
+    <h3 style="margin-top: 25px; font-size: 18px;">How to configure it:</h3>
+
+    <ol>
+        <li>Login to your Nezasa instance</li>
+        <li>Open the <strong>Nezasa Cockpit</strong></li>
+        <li>Go to <strong>Settings</strong></li>
+        <li>Select your <strong>Distribution Channel</strong></li>
+        <li>Open the <strong>Checkout</strong> section</li>
+        <li>Scroll down to find <strong>Custom Checkout</strong></li>
+        <li>Paste the copied URL into the <strong>Custom Checkout URL</strong> field</li>
+    </ol>
 </div>
 
 <script>
