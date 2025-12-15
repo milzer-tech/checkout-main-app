@@ -14,10 +14,15 @@ return new class extends Migration
     {
         Schema::create('checkouts', function (Blueprint $table) {
             $table->ulid('id')->primary();
-            $table->string('checkout_id')->unique();
+            $table->string('checkout_id');
             $table->string('itinerary_id');
+            $table->char('origin', 3);
+            $table->char('lang', 2)->nullable();
+            $table->boolean('rest_payment')->default(false);
             $table->json('data')->nullable();
             $table->timestamps();
+
+            $table->unique(['checkout_id', 'itinerary_id']);
         });
 
         Schema::create('checkout_transactions', function (Blueprint $table) {
@@ -33,14 +38,5 @@ return new class extends Migration
             $table->tinyInteger('status')->default(PaymentStatusEnum::Pending->value);
             $table->timestamps();
         });
-    }
-
-    /**
-     * Reverse the migrations.
-     */
-    public function down(): void
-    {
-        Schema::dropIfExists('checkout_transactions');
-        Schema::dropIfExists('checkouts');
     }
 };
