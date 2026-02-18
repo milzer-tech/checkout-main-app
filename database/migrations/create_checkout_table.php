@@ -22,7 +22,7 @@ return new class extends Migration
             $table->json('data')->nullable();
             $table->timestamps();
 
-            $table->unique(['checkout_id', 'itinerary_id']);
+            $table->unique(['checkout_id', 'itinerary_id', 'rest_payment']);
         });
 
         Schema::create('checkout_transactions', function (Blueprint $table) {
@@ -35,8 +35,14 @@ return new class extends Migration
             $table->text('result_data')->nullable();
             $table->text('nezasa_transaction')->nullable();
             $table->string('nezasa_transaction_ref_id')->nullable();
-            $table->tinyInteger('status')->default(PaymentStatusEnum::Pending->value);
+            $table->string('status');
             $table->timestamps();
         });
+    }
+
+    public function down(): void
+    {
+        Schema::dropIfExists('checkout_transactions');
+        Schema::dropIfExists('checkouts');
     }
 };
