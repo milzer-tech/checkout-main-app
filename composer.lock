@@ -2398,16 +2398,16 @@
         },
         {
             "name": "livewire/livewire",
-            "version": "v3.7.11",
+            "version": "v3.7.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/livewire/livewire.git",
-                "reference": "addd6e8e9234df75f29e6a327ee2a745a7d67bb6"
+                "reference": "7fcb612d1274980d80703efb5658e58d6d37ada9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/livewire/livewire/zipball/addd6e8e9234df75f29e6a327ee2a745a7d67bb6",
-                "reference": "addd6e8e9234df75f29e6a327ee2a745a7d67bb6",
+                "url": "https://api.github.com/repos/livewire/livewire/zipball/7fcb612d1274980d80703efb5658e58d6d37ada9",
+                "reference": "7fcb612d1274980d80703efb5658e58d6d37ada9",
                 "shasum": ""
             },
             "require": {
@@ -2462,7 +2462,7 @@
             "description": "A front-end framework for Laravel.",
             "support": {
                 "issues": "https://github.com/livewire/livewire/issues",
-                "source": "https://github.com/livewire/livewire/tree/v3.7.11"
+                "source": "https://github.com/livewire/livewire/tree/v3.7.12"
             },
             "funding": [
                 {
@@ -2470,7 +2470,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-02-26T00:58:19+00:00"
+            "time": "2026-03-25T23:04:42+00:00"
         },
         {
             "name": "mailersend/laravel-driver",
@@ -2609,16 +2609,16 @@
         },
         {
             "name": "milzer/checkout",
-            "version": "v1.0.53",
+            "version": "v1.0.54",
             "source": {
                 "type": "git",
                 "url": "https://github.com/milzer-tech/checkout.git",
-                "reference": "5ae133bb3e35c29430392e1a24af74fddc627bb2"
+                "reference": "a7f91152ee1f4e65a83bc8bdbf3cdfc93b4963ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/milzer-tech/checkout/zipball/5ae133bb3e35c29430392e1a24af74fddc627bb2",
-                "reference": "5ae133bb3e35c29430392e1a24af74fddc627bb2",
+                "url": "https://api.github.com/repos/milzer-tech/checkout/zipball/a7f91152ee1f4e65a83bc8bdbf3cdfc93b4963ab",
+                "reference": "a7f91152ee1f4e65a83bc8bdbf3cdfc93b4963ab",
                 "shasum": ""
             },
             "require": {
@@ -2678,9 +2678,9 @@
             ],
             "support": {
                 "issues": "https://github.com/milzer-tech/checkout/issues",
-                "source": "https://github.com/milzer-tech/checkout/tree/v1.0.53"
+                "source": "https://github.com/milzer-tech/checkout/tree/v1.0.54"
             },
-            "time": "2026-03-25T18:36:52+00:00"
+            "time": "2026-03-25T19:25:18+00:00"
         },
         {
             "name": "monolog/monolog",
