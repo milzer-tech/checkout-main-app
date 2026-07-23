@@ -28,6 +28,42 @@
             font-size: 24px;
         }
 
+        .status-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            margin: 22px 0;
+        }
+
+        .status-box {
+            padding: 14px 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: #fafafa;
+        }
+
+        .status-box strong,
+        .status-box span {
+            display: block;
+        }
+
+        .status-box span {
+            margin-top: 7px;
+            font-size: 14px;
+        }
+
+        .status-ok {
+            color: #2e7d32;
+        }
+
+        .status-error {
+            color: #c62828;
+        }
+
+        .status-warning {
+            color: #b26a00;
+        }
+
         .code-box {
             background: #eee;
             padding: 12px;
@@ -63,12 +99,46 @@
             padding-left: 20px;
             text-align: left;
         }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 20px;
+            }
+
+            .status-grid {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 
 <body>
 <div class="container">
     <h2>The checkout app is running 🎉</h2>
+
+    <div class="status-grid">
+        <div class="status-box">
+            <strong>Database</strong>
+            <span class="{{ $databaseConnected ? 'status-ok' : 'status-error' }}">
+                {{ $databaseConnected ? '✓ Connected' : '✕ Disconnected' }}
+            </span>
+        </div>
+
+        <div class="status-box">
+            <strong>Cache</strong>
+            <span class="{{ $cacheConnected ? 'status-ok' : 'status-error' }}">
+                {{ $cacheConnected ? '✓ Connected' : '✕ Disconnected' }}
+            </span>
+            <span>Driver: {{ $cacheDriver }}</span>
+        </div>
+
+        <div class="status-box">
+            <strong>Horizon</strong>
+            <span class="{{ $horizonStatus === 'running' ? 'status-ok' : ($horizonStatus === 'paused' ? 'status-warning' : 'status-error') }}">
+                {{ $horizonStatus === 'running' ? '✓ Active' : ucfirst($horizonStatus) }}
+            </span>
+        </div>
+    </div>
 
     <p>Please configure the following <strong>Custom Checkout URL</strong> in your Nezasa instance:</p>
 
