@@ -1,5 +1,6 @@
 <?php
 
+use Logtail\Monolog\LogtailHandler;
 use Monolog\Handler\NullHandler;
 use Monolog\Handler\StreamHandler;
 use Monolog\Handler\SyslogUdpHandler;
@@ -127,6 +128,15 @@ return [
             'path' => storage_path('logs/laravel.log'),
         ],
 
-    ],
+        'betterstack' => [
+            'driver' => 'monolog',
+            'level' => env('LOG_LEVEL', 'debug'),
+            'handler' => LogtailHandler::class,
+            'handler_with' => [
+                'sourceToken' => env('BETTER_STACK_SOURCE_TOKEN'),
+                'endpoint' => env('BETTER_STACK_SOURCE_ENDPOINT'),
+            ],
+        ],
 
+    ],
 ];
