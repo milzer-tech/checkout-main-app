@@ -2725,16 +2725,16 @@
         },
         {
             "name": "logtail/monolog-logtail",
-            "version": "v3.3.1",
+            "version": "v3.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/logtail/monolog-logtail.git",
-                "reference": "c6526b79293026b7efff0f3de4dc05240200c9e6"
+                "reference": "1e65cf544bcc787b8e6f32a42524f12c16dd86b3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/logtail/monolog-logtail/zipball/c6526b79293026b7efff0f3de4dc05240200c9e6",
-                "reference": "c6526b79293026b7efff0f3de4dc05240200c9e6",
+                "url": "https://api.github.com/repos/logtail/monolog-logtail/zipball/1e65cf544bcc787b8e6f32a42524f12c16dd86b3",
+                "reference": "1e65cf544bcc787b8e6f32a42524f12c16dd86b3",
                 "shasum": ""
             },
             "require": {
@@ -2767,9 +2767,9 @@
             ],
             "support": {
                 "issues": "https://github.com/logtail/monolog-logtail/issues",
-                "source": "https://github.com/logtail/monolog-logtail/tree/v3.3.1"
+                "source": "https://github.com/logtail/monolog-logtail/tree/v3.3.2"
             },
-            "time": "2026-07-08T13:52:27+00:00"
+            "time": "2026-09-24T14:25:01+00:00"
         },
         {
             "name": "mailersend/laravel-driver",
@@ -2908,22 +2908,23 @@
         },
         {
             "name": "milzer/checkout",
-            "version": "v1.0.95",
+            "version": "v1.0.97",
             "source": {
                 "type": "git",
                 "url": "https://github.com/milzer-tech/checkout.git",
-                "reference": "4bfbe65e5405697b98dd19495d9addfce6a26891"
+                "reference": "88ef02837a3cd1e239ff5cac366f9ee6d0b3a9e7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/milzer-tech/checkout/zipball/4bfbe65e5405697b98dd19495d9addfce6a26891",
-                "reference": "4bfbe65e5405697b98dd19495d9addfce6a26891",
+                "url": "https://api.github.com/repos/milzer-tech/checkout/zipball/88ef02837a3cd1e239ff5cac366f9ee6d0b3a9e7",
+                "reference": "88ef02837a3cd1e239ff5cac366f9ee6d0b3a9e7",
                 "shasum": ""
             },
             "require": {
                 "azimkordpour/power-enum": "^1.2",
                 "intervention/validation": "^4.0",
                 "livewire/livewire": "^3.6",
+                "milzer/laravel-http-logger": "^0.2.0",
                 "php": "^8.3.0",
                 "php-soap/encoding": "^0.31.0",
                 "php-soap/wsdl": "^1.18",
@@ -2981,9 +2982,93 @@
             ],
             "support": {
                 "issues": "https://github.com/milzer-tech/checkout/issues",
-                "source": "https://github.com/milzer-tech/checkout/tree/v1.0.95"
+                "source": "https://github.com/milzer-tech/checkout/tree/v1.0.97"
             },
-            "time": "2026-09-23T17:21:41+00:00"
+            "time": "2026-09-25T12:36:55+00:00"
+        },
+        {
+            "name": "milzer/laravel-http-logger",
+            "version": "v0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/milzer-tech/laravel-http-logger.git",
+                "reference": "ecf86b8fcb3a49b85fc11753444a4e0fa443996c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/milzer-tech/laravel-http-logger/zipball/ecf86b8fcb3a49b85fc11753444a4e0fa443996c",
+                "reference": "ecf86b8fcb3a49b85fc11753444a4e0fa443996c",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "^11.0 || ^12.0",
+                "illuminate/contracts": "^11.0 || ^12.0",
+                "illuminate/filesystem": "^11.0 || ^12.0",
+                "illuminate/http": "^11.0 || ^12.0",
+                "illuminate/log": "^11.0 || ^12.0",
+                "illuminate/routing": "^11.0 || ^12.0",
+                "illuminate/support": "^11.0 || ^12.0",
+                "league/flysystem": "^3.0",
+                "php": "^8.2",
+                "psr/http-message": "^1.1 || ^2.0",
+                "psr/log": "^1.1 || ^2.0 || ^3.0"
+            },
+            "conflict": {
+                "saloonphp/saloon": "<4.0"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.22",
+                "orchestra/testbench": "^9.0 || ^10.0",
+                "pestphp/pest": "^3.8 || ^4.0",
+                "pestphp/pest-plugin-type-coverage": "^3.6.1 || ^4.0",
+                "phpstan/phpstan": "^2.1",
+                "phpstan/phpstan-mockery": "^2.0",
+                "rector/rector": "^2.1",
+                "saloonphp/saloon": "^4.0"
+            },
+            "suggest": {
+                "saloonphp/saloon": "Required to log outgoing calls with the HasLogging Saloon plugin (^4.0)."
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Milzer\\HttpLogger\\Laravel\\HttpLoggerServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Milzer\\HttpLogger\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Milzer",
+                    "email": "azim@milzer.de"
+                }
+            ],
+            "description": "Structured, redacted logging of HTTP traffic in Laravel: incoming requests and outgoing Saloon calls, with one shared trace id.",
+            "homepage": "https://github.com/milzer-tech/laravel-http-logger",
+            "keywords": [
+                "http",
+                "laravel",
+                "logging",
+                "middleware",
+                "request-logging",
+                "saloon",
+                "saloon-plugin",
+                "trace"
+            ],
+            "support": {
+                "issues": "https://github.com/milzer-tech/laravel-http-logger/issues",
+                "source": "https://github.com/milzer-tech/laravel-http-logger"
+            },
+            "time": "2026-09-25T09:53:45+00:00"
         },
         {
             "name": "monolog/monolog",
