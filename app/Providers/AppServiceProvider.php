@@ -2,7 +2,10 @@
 
 namespace App\Providers;
 
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\ServiceProvider;
+use Sentry\State\Scope;
+use function Sentry\configureScope;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -19,6 +22,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        configureScope(function (Scope $scope): void {
+            $scope->setTag('client', (string) config('http-logger.context.client'));
+        });
+
+        Log::shareContext(['client' => config('http-logger.context.client')]);
     }
 }
