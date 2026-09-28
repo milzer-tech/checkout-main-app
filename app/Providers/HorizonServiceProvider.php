@@ -23,8 +23,9 @@ class HorizonServiceProvider extends HorizonApplicationServiceProvider
     /**
      * Register the Horizon gate.
      *
-     * This app has no users, so access is enforced by the HorizonBasicAuth
-     * middleware (see config/horizon.php) before this gate is reached.
+     * This app has no users, so access is enforced by the BasicAuth
+     * middleware (see config/horizon.php and config/auth.php) before
+     * this gate is reached.
      */
     protected function gate(): void
     {

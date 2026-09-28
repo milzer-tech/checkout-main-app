@@ -6,18 +6,18 @@ use Closure;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
 
-class HorizonBasicAuth
+class BasicAuth
 {
     /**
-     * Protect the Horizon dashboard with HTTP Basic Auth.
+     * Protect routes (Horizon dashboard, home page) with HTTP Basic Auth.
      *
      * Access is denied when no credentials are configured, so a missing
-     * env value never leaves the dashboard open.
+     * env value never leaves a protected route open.
      */
     public function handle(Request $request, Closure $next): Response
     {
-        $username = (string) config('horizon.basic_auth.username');
-        $password = (string) config('horizon.basic_auth.password');
+        $username = (string) config('auth.basic_auth.username');
+        $password = (string) config('auth.basic_auth.password');
 
         if ($username === '' || $password === '') {
             abort(403);
@@ -28,7 +28,7 @@ class HorizonBasicAuth
 
         if (! $validUsername || ! $validPassword) {
             return response('Unauthorized.', 401, [
-                'WWW-Authenticate' => 'Basic realm="Horizon", charset="UTF-8"',
+                'WWW-Authenticate' => 'Basic realm="Restricted", charset="UTF-8"',
             ]);
         }
 

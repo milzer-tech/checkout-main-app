@@ -1,5 +1,7 @@
 <?php
 
+use App\Models\User;
+
 return [
 
     /*
@@ -62,7 +64,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => env('AUTH_MODEL', App\Models\User::class),
+            'model' => env('AUTH_MODEL', User::class),
         ],
 
         // 'users' => [
@@ -111,5 +113,21 @@ return [
     */
 
     'password_timeout' => env('AUTH_PASSWORD_TIMEOUT', 10800),
+
+    /*
+    |--------------------------------------------------------------------------
+    | Basic Auth
+    |--------------------------------------------------------------------------
+    |
+    | Credentials required by the BasicAuth middleware, which protects the
+    | home page and the Horizon dashboard. When either value is empty,
+    | access to the protected routes is denied.
+    |
+    */
+
+    'basic_auth' => [
+        'username' => env('BASIC_AUTH_USERNAME'),
+        'password' => env('BASIC_AUTH_PASSWORD'),
+    ],
 
 ];
