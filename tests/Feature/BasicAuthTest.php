@@ -2,15 +2,15 @@
 
 beforeEach(function () {
     config([
-        'horizon.basic_auth.username' => 'admin',
-        'horizon.basic_auth.password' => 'secret',
+        'auth.basic_auth.username' => 'admin',
+        'auth.basic_auth.password' => 'secret',
     ]);
 });
 
 test('horizon asks for credentials when none are given', function () {
     $this->get('/horizon')
         ->assertStatus(401)
-        ->assertHeader('WWW-Authenticate', 'Basic realm="Horizon", charset="UTF-8"');
+        ->assertHeader('WWW-Authenticate', 'Basic realm="Restricted", charset="UTF-8"');
 });
 
 test('horizon rejects wrong credentials', function () {
@@ -30,7 +30,7 @@ test('horizon is accessible with valid credentials', function () {
 });
 
 test('horizon is forbidden when credentials are not configured', function () {
-    config(['horizon.basic_auth.password' => null]);
+    config(['auth.basic_auth.password' => null]);
 
     $this->withBasicAuth('admin', '')
         ->get('/horizon')

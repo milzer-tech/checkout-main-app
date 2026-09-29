@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Middleware\HorizonBasicAuth;
+use App\Http\Middleware\BasicAuth;
 use Illuminate\Support\Str;
 
 return [
@@ -71,22 +71,7 @@ return [
     |
     */
 
-    'middleware' => ['web', HorizonBasicAuth::class],
-
-    /*
-    |--------------------------------------------------------------------------
-    | Horizon Basic Auth
-    |--------------------------------------------------------------------------
-    |
-    | Credentials required to open the Horizon dashboard. When either value
-    | is empty, access to the dashboard is denied.
-    |
-    */
-
-    'basic_auth' => [
-        'username' => env('HORIZON_BASIC_AUTH_USERNAME'),
-        'password' => env('HORIZON_BASIC_AUTH_PASSWORD'),
-    ],
+    'middleware' => ['web', BasicAuth::class],
 
     /*
     |--------------------------------------------------------------------------

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Middleware\BasicAuth;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
@@ -48,4 +49,4 @@ Route::get('/', function () {
         'cacheDriver',
         'horizonStatus',
     ));
-});
+})->middleware(BasicAuth::class);
