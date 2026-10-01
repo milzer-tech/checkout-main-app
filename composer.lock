@@ -2968,23 +2968,23 @@
         },
         {
             "name": "milzer/checkout",
-            "version": "v1.1.0",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/milzer-tech/checkout.git",
-                "reference": "39e00f7b8cb6f3d7b36c94c8e9f426d984a668b3"
+                "reference": "a34217955cb1eb2bb9477fc0b323894026bcad7d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/milzer-tech/checkout/zipball/39e00f7b8cb6f3d7b36c94c8e9f426d984a668b3",
-                "reference": "39e00f7b8cb6f3d7b36c94c8e9f426d984a668b3",
+                "url": "https://api.github.com/repos/milzer-tech/checkout/zipball/a34217955cb1eb2bb9477fc0b323894026bcad7d",
+                "reference": "a34217955cb1eb2bb9477fc0b323894026bcad7d",
                 "shasum": ""
             },
             "require": {
                 "azimkordpour/power-enum": "^1.2",
                 "intervention/validation": "^4.0",
                 "livewire/livewire": "^3.6",
-                "milzer/laravel-http-logger": "^0.3.0",
+                "milzer/laravel-http-logger": "^0.4",
                 "php": "^8.3.0",
                 "php-soap/encoding": "^0.31.0",
                 "php-soap/wsdl": "^1.18",
@@ -3042,34 +3042,34 @@
             ],
             "support": {
                 "issues": "https://github.com/milzer-tech/checkout/issues",
-                "source": "https://github.com/milzer-tech/checkout/tree/v1.1.0"
+                "source": "https://github.com/milzer-tech/checkout/tree/v1.1.1"
             },
-            "time": "2026-10-01T10:54:32+00:00"
+            "time": "2026-10-01T13:05:25+00:00"
         },
         {
             "name": "milzer/laravel-http-logger",
-            "version": "v0.3.0",
+            "version": "v0.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/milzer-tech/laravel-http-logger.git",
-                "reference": "4b1213b2e0ef5c957113658ab291fa40f3503cf5"
+                "reference": "2d773b92e83ad7aafd2ebe2fa120e8eac17dcc3b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/milzer-tech/laravel-http-logger/zipball/4b1213b2e0ef5c957113658ab291fa40f3503cf5",
-                "reference": "4b1213b2e0ef5c957113658ab291fa40f3503cf5",
+                "url": "https://api.github.com/repos/milzer-tech/laravel-http-logger/zipball/2d773b92e83ad7aafd2ebe2fa120e8eac17dcc3b",
+                "reference": "2d773b92e83ad7aafd2ebe2fa120e8eac17dcc3b",
                 "shasum": ""
             },
             "require": {
                 "guzzlehttp/guzzle": "^7.8.2",
                 "guzzlehttp/promises": "^2.0",
-                "illuminate/console": "^11.0 || ^12.0",
-                "illuminate/contracts": "^11.0 || ^12.0",
-                "illuminate/filesystem": "^11.0 || ^12.0",
-                "illuminate/http": "^11.0 || ^12.0",
-                "illuminate/log": "^11.0 || ^12.0",
-                "illuminate/routing": "^11.0 || ^12.0",
-                "illuminate/support": "^11.0 || ^12.0",
+                "illuminate/console": "^12.0 || ^13.0",
+                "illuminate/contracts": "^12.0 || ^13.0",
+                "illuminate/filesystem": "^12.0 || ^13.0",
+                "illuminate/http": "^12.0 || ^13.0",
+                "illuminate/log": "^12.0 || ^13.0",
+                "illuminate/routing": "^12.0 || ^13.0",
+                "illuminate/support": "^12.0 || ^13.0",
                 "league/flysystem": "^3.0",
                 "php": "^8.2",
                 "psr/http-message": "^1.1 || ^2.0",
@@ -3080,7 +3080,7 @@
             },
             "require-dev": {
                 "laravel/pint": "^1.22",
-                "orchestra/testbench": "^9.0 || ^10.0",
+                "orchestra/testbench": "^10.0 || ^11.0",
                 "pestphp/pest": "^3.8 || ^4.0",
                 "pestphp/pest-plugin-type-coverage": "^3.6.1 || ^4.0",
                 "phpstan/phpstan": "^2.1",
@@ -3130,7 +3130,7 @@
                 "issues": "https://github.com/milzer-tech/laravel-http-logger/issues",
                 "source": "https://github.com/milzer-tech/laravel-http-logger"
             },
-            "time": "2026-09-25T13:02:02+00:00"
+            "time": "2026-10-01T12:58:12+00:00"
         },
         {
             "name": "monolog/monolog",
