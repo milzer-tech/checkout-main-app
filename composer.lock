@@ -3018,16 +3018,16 @@
         },
         {
             "name": "milzer/checkout",
-            "version": "v1.5.0",
+            "version": "v1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/milzer-tech/checkout.git",
-                "reference": "b32711941d157d6885d6592bbc6bb70e72e91eb8"
+                "reference": "9c7a7d4a373f712efaed7764430b44cc91aa1d04"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/milzer-tech/checkout/zipball/b32711941d157d6885d6592bbc6bb70e72e91eb8",
-                "reference": "b32711941d157d6885d6592bbc6bb70e72e91eb8",
+                "url": "https://api.github.com/repos/milzer-tech/checkout/zipball/9c7a7d4a373f712efaed7764430b44cc91aa1d04",
+                "reference": "9c7a7d4a373f712efaed7764430b44cc91aa1d04",
                 "shasum": ""
             },
             "require": {
@@ -3093,9 +3093,9 @@
             ],
             "support": {
                 "issues": "https://github.com/milzer-tech/checkout/issues",
-                "source": "https://github.com/milzer-tech/checkout/tree/v1.5.0"
+                "source": "https://github.com/milzer-tech/checkout/tree/v1.6.0"
             },
-            "time": "2026-10-20T15:03:54+00:00"
+            "time": "2026-10-20T15:45:06+00:00"
         },
         {
             "name": "milzer/laravel-http-logger",
